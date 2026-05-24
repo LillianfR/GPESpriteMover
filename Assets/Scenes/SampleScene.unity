@@ -221,6 +221,8 @@ GameObject:
   - component: {fileID: 191807897}
   - component: {fileID: 191807896}
   - component: {fileID: 191807898}
+  - component: {fileID: 191807900}
+  - component: {fileID: 191807899}
   m_Layer: 0
   m_Name: StarShipObject
   m_TagString: Untagged
@@ -314,7 +316,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e69a54ab16f1945ba351deec2b8217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpriteChanger
-  ourRenderThing: {fileID: 191807896}
+  ourRenderThing: {fileID: 0}
+--- !u!114 &191807899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191807895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc91246da2be0204d877774a9e981fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameQuitter
+--- !u!114 &191807900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191807895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444502e8724218f4ba7838c064640bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  maxScale: 0.1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
