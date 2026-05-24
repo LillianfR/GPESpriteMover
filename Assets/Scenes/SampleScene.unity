@@ -223,6 +223,8 @@ GameObject:
   - component: {fileID: 191807898}
   - component: {fileID: 191807900}
   - component: {fileID: 191807899}
+  - component: {fileID: 191807902}
+  - component: {fileID: 191807901}
   m_Layer: 0
   m_Name: StarShipObject
   m_TagString: Untagged
@@ -342,6 +344,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   maxScale: 0.1
+--- !u!114 &191807901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191807895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336c5550a1cfe0a458e4288b6f8d6bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  speed: 7
+--- !u!114 &191807902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191807895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f41fa65dd9c390448320fcf419132df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteMovement
+  maxHorizontalDistance: 5
+  scalespeed: 0.1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
