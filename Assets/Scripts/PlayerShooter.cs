@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour
 {
     [Header("Shooting Controls")]
-    //connects to object want to shoot aka laser prefab
+    //connects to object want to shoot 
     public GameObject laserPrefab; 
 
     //where shoots from
@@ -26,6 +26,7 @@ public class PlayerShooting : MonoBehaviour
     {
         //spawns clone of your laser prefab at the shooting position
         Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
-        Debug.Log("Laser Fired!");
+       // Debug.Log("Laser Fired!");
+       
     }
 }

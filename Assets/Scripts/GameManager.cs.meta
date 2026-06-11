@@ -1,2 +1,18 @@
 fileFormatVersion: 2
 guid: 407896b36d32bfb47aa419ec1459440e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - shootSound: {fileID: 8300000, guid: eabc53bcd0309bf47a38f8bbdf416612, type: 3}
+  - hitSound: {fileID: 8300000, guid: b278e56c58c8708409c37af322a124a6, type: 3}
+  - backgroundMusic: {fileID: 8300000, guid: 332dfd90cddf0aa4c916b3b5a7e44c2a, type: 3}
+  - explosionSound: {fileID: 8300000, guid: eae4a96609932054ea7fe9c6c307dff5, type: 3}
+  - musicSource: {instanceID: 0}
+  - sfxSource: {instanceID: 0}
+  - audioMixer: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

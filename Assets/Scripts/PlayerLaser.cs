@@ -22,10 +22,10 @@ public class PlayerLaser : MonoBehaviour
     //triggers when the laser hits something with a Collider
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // looking for enemy script on the object we hit
+        //looking for enemy script on the object we hit
         Enemy enemy = collision.GetComponent<Enemy>();
 
-        // if it has an Enemy component deal damage
+        //if it has an Enemy component deal damage
         if (enemy != null)
         {
             //this calls the inherited takedamage function
@@ -33,6 +33,7 @@ public class PlayerLaser : MonoBehaviour
 
             //destroy the laser bullet so it doesnt pass through
             Destroy(gameObject); 
+            GameManager.Instance.PlayShootSound();
         }
     }
 }

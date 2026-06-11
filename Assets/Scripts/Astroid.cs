@@ -7,13 +7,16 @@ public class Asteroid : Enemy
     public float minTumbleSpeed = 10f;
     public float maxTumbleSpeed = 50f;
     public float downwardSpeed = 2f;
+
+    [Header("Score Value")]
+    public int scoreValue = 10; 
     
     private Rigidbody2D rb;
 
     //override allows us to add asteroid physics 
     protected override void Start()
     {
-        // the base (core)
+        //the base (core)
         base.Start(); 
 
         rb = GetComponent<Rigidbody2D>();
@@ -37,9 +40,6 @@ public class Asteroid : Enemy
     //handles crashing directly into the player
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //was used for debugging to see what we were colliding with
-        //Debug.Log("The Asteroid trigger just overlapped with something named: " + collision.gameObject.name);
-
         //checks if the object we collided with is tagged as the Player
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -56,11 +56,15 @@ public class Asteroid : Enemy
         }
     }
 
-    //laser will dmg astroid
+    //laser will dmg asteroid
     protected override void Die()
     {
         if (GameManager.Instance != null)
         {
+            //adds score ONLY when destroyed by player (not collision)
+            GameManager.Instance.AddScore(scoreValue);
+
+            //still counts toward victory
             GameManager.Instance.TargetDestroyed();
         }
 
